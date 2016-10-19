@@ -35,16 +35,31 @@ module.exports.routes = {
   '/': {
     controller: 'Page',
     action: 'index'
-  }
+  },
 
-  /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+  'get /admin/login': {
+      controller: 'User',
+      action: 'do_login'
+  },
+
+  'get /admin/fb_login': {
+      controller: 'Auth',
+      action: 'fb_login'
+  },
+
+  'get /admin/fb_callback': {
+      controller: 'Auth',
+      action: 'fb_callback'
+  },
+  
+  'post /admin/login': {
+      controller: 'Auth',
+      action: 'login'
+  },
+  
+  '/logout': {
+      controller: 'Auth',
+      action: 'logout'
+  }
 
 };

@@ -1,0 +1,39 @@
+<div class="ui middle aligned center aligned grid user-login-grid">
+    <div class="column user-login-column">
+        <h2 class="ui teal image header">
+            <div class="content">
+                <i class="universal access icon"></i>
+                <%= __('Workout CMS') %>
+            </div>
+        </h2>
+        <form class="ui large form" method="POST" action="/admin/login">
+            <div class="ui stacked segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                    <i class="mail icon"></i>
+                    <input type="text" name="email" placeholder="<%= __('Email') %>">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="password" name="password" placeholder="<%= __('Password') %>">
+                    </div>
+                </div>
+                <button class="ui fluid large teal submit button" type="submit">
+                    <i class="motorcycle icon"></i>
+                    <%= __('Login') %>
+                </button>
+                <div class="ui divider"></div>
+                <a href="/admin/fb_login" class="ui fluid large blue submit button">
+                    <i class="facebook icon"></i>
+                    <%= __('Login via Facebook') %>
+                </a>
+            </div>
+            <div class="ui banner label">
+                <a href="mailto:aitch0083@gmail.com"><%= __('by Aitch Chung') %></a>
+            </div>
+            <div class="ui error message"></div>
+        </form>
+    </div>
+</div>
