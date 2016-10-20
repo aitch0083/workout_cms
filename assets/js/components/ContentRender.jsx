@@ -1,30 +1,21 @@
-define(['require', 'react', 'react-router', 'app/components/MainTable'], function(require, React, ReactRouter, MainTable) {
+import React from 'react';
+import {Router, Route, DefaultRoute, browserHistory} from 'react-router';
+import MainTable from './MainTable.jsx!';
 
-    var Router         = ReactRouter.Router;
-    var Route          = ReactRouter.Route;
-    var DefaultRoute   = ReactRouter.DefaultRoute;
-    var browserHistory = ReactRouter.browserHistory;
+const App = (props) => (
+    <MainTable actionModel="Article">Main</MainTable>
+);
 
-    var App = React.createClass({
-        render: function(){
-            return (
-                <MainTable actionModel="Article"></MainTable>
-            );
-        }
-    });
+class ContentRender extends React.Component{
 
-    var ContentRender = React.createClass({
+    render () {
+        return (
+            <Router history={browserHistory}>
+                <Route path="/dashboard" component={App} />
+            </Router>
+        );
+    }
 
-        render: function() {
-            return (
-                <Router history={browserHistory}>
-                    <Route path="/dashboard" component={App} />
-                </Router>
-            );
-        }
+}; //ContentRender
 
-    }); //ContentRender
-
-    return ContentRender;
-
-}); //define
+export default ContentRender;

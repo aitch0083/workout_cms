@@ -1,28 +1,22 @@
-define(['require', 'react', 'superagent'], function(require, React, request) {
+import React from 'react';
+import request from 'superagent';
 
-    var action_model_columns = [];
+let action_model_columns = [];
 
-    var MainTable = React.createClass({
+class MainTable extends React.Component {
 
-        getDefaultProps: function(){
-            return {};
-        },
+    componentWillMount (){
+        request.get('/articles/').end(function(err, res){
+            console.info('/articles/', err, res);
+        });
+    }
 
-        componentWillMount: function(){
-            request.get('/articles/').end(function(err, res){
-                console.info('/articles/', err, res);
-            });
-        },
+    render () {
+        return (
+            <table className="ui green selectable celled table"></table>
+        );
+    }
 
-        render: function() {
+};
 
-            return (
-                <table className="ui green selectable celled table"></table>
-            );
-        }
-
-    }); //MainTable
-
-    return MainTable;
-
-}); //define
+export default MainTable;

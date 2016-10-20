@@ -1,0 +1,1 @@
+module.exports = require("npm:superagent@2.3.0/lib/node/index.js");

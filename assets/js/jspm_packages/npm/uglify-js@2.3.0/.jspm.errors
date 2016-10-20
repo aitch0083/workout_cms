@@ -1,0 +1,8 @@
+MultipleErrors: /Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:9:29: Unexpected token )
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:9:31: Unexpected token {
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:9:32: Unexpected token }
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:10:30: Unexpected token )
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:10:32: Unexpected token {
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:10:33: Unexpected token }
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:12:1: Unexpected token End of File
+/Users/dewtouch/.jspm/packages/npm/uglify-js@2.3.0/test/compress/issue-12.js:12:1: Unexpected token End of File

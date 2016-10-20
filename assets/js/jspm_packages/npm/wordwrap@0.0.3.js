@@ -1,0 +1,1 @@
+module.exports = require("npm:wordwrap@0.0.3/index.js");

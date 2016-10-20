@@ -1,0 +1,14 @@
+{
+  "jspm": {
+    "dependencies": {
+      "jsx": "npm:jspm-loader-jsx@^0.0.7",
+      "require": "npm:require@^2.4.20",
+      "superagent": "npm:superagent@^2.3.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

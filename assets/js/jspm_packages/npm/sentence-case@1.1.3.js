@@ -1,0 +1,1 @@
+module.exports = require("npm:sentence-case@1.1.3/sentence-case.js");
